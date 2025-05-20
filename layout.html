@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <title>Document</title>
+    <style>
+        ul {
+            list-style-type: none;
+            overflow: auto;
+            background-color: #333333;
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111111;
+        }
+
+        #heading {
+            height: 70px;
+            border: 1px solid black;
+        }
+
+        #menu {
+            height: 40px;
+            border: 1px solid black;
+            background-color: black;
+
+        }
+
+        #content {
+            height: calc(100vh - 130px);
+            border: 1px solid black;
+        }
+
+        #heading h1 {
+            text-align: center;
+        }
+
+        #menu a {
+            padding: 10px;
+            display: inline-block;
+            font-size: 20px;
+            text-decoration: none;
+            color: white;
+        }
+
+        #content iframe {
+            width: 100%;
+            height: 100%;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="heading">
+        <h1>Ryan's Web Tutorial</h1>
+    </div>
+    <div id="menu">
+        <a href="home-lessons.html" target="iframe-content">home</a>
+        <a href="about.html" target="iframe-content">about</a>
+        <a href="html-lessons.html" target="iframe-content">html</a>
+        <a href="css-lessons.html" target="iframe-content">css</a>
+        <a href="php-lessons.php" target="iframe-content">php</a>
+    </div>
+    <!-- <ul>
+        <li style="float:left"><a href="home.html">Content</a></li>
+        <li style="float:left"><a href="about.html">About</a></li>
+        <li style="float:left"><a href="html.html">html</a></li>
+        <li style="float:left"><a href="css.html">css</a></li>
+    </ul> -->
+    <div id="content">
+        <iframe src="" name="iframe-content"></iframe>
+    </div>
+
+</body>
+
+</html>

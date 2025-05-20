@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        .city {
+            background-color: tomato;
+            color: white;
+            border: 2px solid black;
+            margin: 20px;
+            padding: 20px;
+        }
+
+        h1 {
+            text-align: center;
+        }
+
+        .note {
+            font-size: 120%;
+            color: red;
+        }
+
+        .town {
+            background-color: tomato;
+            color: white;
+            padding: 10px;
+        }
+
+        .main {
+            text-align: center;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>css <span class="note">Classes</span></h1>
+    <a href="home.html">Back to Home</a>
+    <p style="text-align: right;"><a href="id.html">Id</a></p>
+    <hr>
+    <hr>
+    <div class="city">
+        <h2>London</h2>
+        <p>London is the capital of England.</p>
+    </div>
+
+    <div class="city">
+        <h2>Paris</h2>
+        <p>Paris is the capital of France.</p>
+    </div>
+
+    <div class="city">
+        <h2>Tokyo</h2>
+        <p>Tokyo is the capital of Japan.</p>
+    </div>
+    <hr>
+    <h2>The class Attribute</h2>
+    <p>Use css to style elements with the class name "city":</p>
+
+    <h2 class="town">London</h2>
+    <p>London is the capital of England.</p>
+
+    <h2 class="town">Paris</h2>
+    <p>Paris is the capital of France.</p>
+
+    <h2 class="town">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+    <hr>
+    <h2>Multiple Classes</h2>
+    <p>Here, all three h2 elements belongs to the "city" class. In addition, London also belongs to the "main" class,
+        which center-aligns the text.</p>
+
+    <h2 class="town main">London</h2>
+    <h2 class="town">Paris</h2>
+    <h2 class="town">Tokyo</h2>
+    <hr>
+    <h2>Different Elements Can Share Same Class</h2>
+
+    <p>Even if the two elements do not have the same tag name, they can both point to the same class, and get the same
+        css styling:</p>
+
+    <h2 class="town">Paris</h2>
+    <p class="town">Paris is the capital of France.</p>
+    <hr>
+    <h2>Use of The class Attribute in JavaScript</h2>
+    <p>Click the button to hide all elements with class name "city":</p>
+
+    <button onclick="myFunction()">Hide elements</button>
+
+    <h2 class="city">London</h2>
+    <p>London is the capital of England.</p>
+
+    <h2 class="city">Paris</h2>
+    <p>Paris is the capital of France.</p>
+
+    <h2 class="city">Tokyo</h2>
+    <p>Tokyo is the capital of Japan.</p>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementsByClassName("city");
+            for (var i = 0; i < x.length; i++) {
+                x[i].style.display = "none";
+            }
+        }
+    </script>
+    <hr>
+</body>
+
+</html>
